@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuscaminasFinal
 {
-    class ConsoleGame<T> : Game<T> where T : ICell, new()
+    public class ConsoleGame<T> : Game<T> where T : ICell, new()
     {
         private char hiddenSymbol;
         private char mineSymbol;

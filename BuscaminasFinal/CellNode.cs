@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuscaminasFinal
 {
-    class CellNode
+    public class CellNode
     {
         public ICell cell;
         public CellNode(ICell pCell)

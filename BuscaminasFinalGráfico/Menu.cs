@@ -29,16 +29,16 @@ namespace BuscaminasFinalGráfico
             switch (((Button)sender).Text)
             {
                 case "Fácil":
-                    //nivel.game = new Game(6, 7, 10);
+                    nivel.game = new Game<Celda>(6, 7, 10);
                     break;
                 case "Normal":
-                    //nivel.game = new Game(9, 10, 15);
+                    nivel.game = new Game<Celda>(9, 10, 15);
                     break;
                 case "Difícil":
-                    //nivel.game = new Game(14, 15, 40);
+                    nivel.game = new Game<Celda>(14, 15, 40);
                     break;
                 case "Personalizado":
-                    //nivel.game = new Game((int)Ancho.Value, (int)Alto.Value, (int)Minas.Value);
+                    nivel.game = new Game<Celda>((int)Ancho.Value, (int)Alto.Value, (int)Minas.Value);
                     break;
             }
             nivel.Show();

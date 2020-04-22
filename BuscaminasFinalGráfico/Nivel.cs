@@ -13,7 +13,7 @@ namespace BuscaminasFinalGráfico
 {
     public partial class Nivel : Form
     {
-        //public Game<T> game;
+        public Game<Celda> game;
         
         public Nivel()
         {

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuscaminasFinal
 {
-    class Game<T> where T : ICell, new()
+    public class Game<T> where T : ICell, new()
     {
         protected int TotalMinas;
 

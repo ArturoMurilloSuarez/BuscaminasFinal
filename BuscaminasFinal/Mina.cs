@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuscaminasFinal
 {
-    class Mina : ICell
+    public class Mina : ICell
     {
         private int posX;
         private int posY;

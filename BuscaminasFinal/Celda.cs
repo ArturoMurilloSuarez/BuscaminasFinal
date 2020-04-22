@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuscaminasFinal
 {
-    class Celda : ICell
+    public class Celda : ICell
     {
         public enum Status //al principio
         {
