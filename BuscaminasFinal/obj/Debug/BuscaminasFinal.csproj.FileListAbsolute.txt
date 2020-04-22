@@ -1,0 +1,6 @@
+C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinal\bin\Debug\BuscaminasFinal.exe.config
+C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinal\bin\Debug\BuscaminasFinal.exe
+C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinal\bin\Debug\BuscaminasFinal.pdb
+C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinal\obj\Debug\BuscaminasFinal.csprojAssemblyReference.cache
+C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinal\obj\Debug\BuscaminasFinal.exe
+C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinal\obj\Debug\BuscaminasFinal.pdb
