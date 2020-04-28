@@ -11,3 +11,4 @@ C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinalGráfico\bin\Debu
 C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinalGráfico\bin\Debug\BuscaminasFinal.pdb
 C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinalGráfico\bin\Debug\BuscaminasFinal.exe.config
 C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinalGráfico\obj\Debug\BuscaminasFinalGráfico.csproj.CopyComplete
+C:\Users\Arturo MS\source\repos\BuscaminasFinal\BuscaminasFinalGráfico\obj\Debug\BuscaminasFinalGráfico.Nivel.resources

@@ -8,7 +8,7 @@ namespace BuscaminasFinal
     {
         protected int TotalMinas;
 
-        protected int FlagCounter;
+        protected int FlagCounter; // = 10
         protected int MineCounter;
 
         protected int Width;
@@ -40,6 +40,22 @@ namespace BuscaminasFinal
             this.GenerateMines();
 
         }
+
+        public int FlagCount
+        {
+            get { return this.FlagCounter; }
+        }
+
+        public int HeightGetter
+        {
+            get { return this.Height; }
+        }
+
+        public int WidthGetter
+        {
+            get { return this.Width; }
+        }
+
 
         public void GenerateMines()
         {
