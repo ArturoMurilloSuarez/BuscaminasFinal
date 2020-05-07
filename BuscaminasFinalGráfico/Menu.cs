@@ -13,6 +13,7 @@ namespace BuscaminasFinalGráfico
 {
     public partial class Menu : Form
     {
+        
         public Menu()
         {
             InitializeComponent();
@@ -41,8 +42,10 @@ namespace BuscaminasFinalGráfico
                     nivel.game = new Game<Celda>((int)Ancho.Value, (int)Alto.Value, (int)Minas.Value);
                     break;
             }
-            nivel.Show();
+            ((WindowsFormsGame)Game.currentGame).currentLevel = nivel;
             this.Hide();
+            nivel.ShowDialog();
+            this.Show();
         }
 
         private void Ancho_ValueChanged(object sender, EventArgs e)

@@ -56,6 +56,37 @@ namespace BuscaminasFinalGráfico
             }
         }
 
+        public void GameStatus()
+        {
+            if (Game<Celda>.currentGame.isPlaying == true)
+            {
+                if (Game<Celda>.currentGame.gameover)
+                {
+                    MessageBox.Show("Has perdido!", "Fin del juego", MessageBoxButtons.OK);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Has ganado!", "Fin del juego", MessageBoxButtons.OK);
+                    this.Close();
+                }
+            }
+        }
 
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private int cronometro= 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.cronometro++;
+            //this.timer1 = this.cronometro; ver que ondaaaaaa
+        }
     }
 }

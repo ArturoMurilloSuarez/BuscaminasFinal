@@ -10,10 +10,13 @@ namespace BuscaminasFinal
         private int posY;
         private Celda.Status estado;
 
+        public bool gameover = false;
+        public bool wingame = false;
+
 
         public Mina()
         {
-            this.estado = Celda.Status.SHOWN; //Para el principio
+            this.estado = Celda.Status.HIDDEN; //Para el principio
         }
 
         public int GetValue()
@@ -30,7 +33,7 @@ namespace BuscaminasFinal
         {
             //Console.Clear();
             Console.WriteLine("Perdiste :(");
-            Console.ReadKey();
+            //Console.ReadKey();
             //this.estado = Celda.Status.SHOWN;
         }
 

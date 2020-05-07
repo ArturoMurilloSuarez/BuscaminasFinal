@@ -20,6 +20,7 @@ namespace BuscaminasFinalGráfico
             this.Dock = DockStyle.Fill;
             this.MouseClick += new MouseEventHandler(ClickBoton);
             this.celdagrafica = cell;
+            
         }
 
         public void ClickBoton(object sender, MouseEventArgs e)
@@ -35,6 +36,7 @@ namespace BuscaminasFinalGráfico
                 {
                     celdagrafica.cell.RightClick();
                 }
+                ((WindowsFormsGame)Game<Celda>.currentGame).UpdateGrid(); //VEr que onda
             }
             
         }

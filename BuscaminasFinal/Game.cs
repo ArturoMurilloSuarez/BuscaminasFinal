@@ -8,8 +8,8 @@ namespace BuscaminasFinal
     {
         protected int TotalMinas;
 
-        protected int FlagCounter; // = 10
-        protected int MineCounter;
+        public int FlagCounter; // = 10
+        public int MineCounter;
 
         protected int Width;
         protected int Height;
@@ -20,7 +20,13 @@ namespace BuscaminasFinal
         public bool gameover = false;
         public bool wingame = false;
 
-        public Game(int Widht, int Height, int minas)
+        public bool firstMove = true;
+
+        public bool isPlaying = true;
+
+        static public Game<Celda> currentGame;
+
+        public Game(int Widht, int Height, int minas) //Agregar primer movimiento
         {
             this.Width = Widht;
             this.Height = Height;
@@ -36,8 +42,9 @@ namespace BuscaminasFinal
                     this.celdas[i, j] = new CellNode(new T()); //llama al constructor de NodeCell, pasandole newT
                 } //crea objetos tipo CellNode
             }
+            //this.GetNeighbors
 
-            this.GenerateMines();
+            //this.GenerateMines(); //Agregar primer movimiento
 
         }
 
@@ -56,8 +63,51 @@ namespace BuscaminasFinal
             get { return this.Width; }
         }
 
+        public void AddFlag()
+        {
+            this.FlagCounter--;
+        }
 
-        public void GenerateMines()
+        public void RemoveFlag()
+        {
+            this.FlagCounter++;
+        }
+
+        public void AddMineCount() //añade bandera, solo en minas
+        {
+            if (--this.MineCounter == 0)
+            {
+                this.isPlaying = false;
+            }
+        }
+
+        public void RemoveMIneCount()
+        {
+            this.MineCounter++;
+        }
+
+        public bool GameOver
+        {
+            get { return this.gameover; }
+            set
+            {
+                this.gameover = true;
+                this.isPlaying = false;
+            }
+        }
+
+        private void Format()
+        {
+
+        }
+
+        public string Tiempo()
+        {
+            get { return }
+
+        }
+
+        public void GenerateMines(int initPosX, int initPosY)
         {
             Random random = new Random();
             List<CellNode> list = new List<CellNode>(); //Guarda todas las posiciones celdas que ya se generaron en una lista
@@ -65,6 +115,10 @@ namespace BuscaminasFinal
             {
                 for (uint j = 0; j < this.Height; j++)
                 {
+                    if (i == initPosX && j == initPosY)
+                    {
+                        continue;
+                    }
                     list.Add(this.celdas[i, j]);
                 }
             } //YA tiene una lista del tamaño de la cantidad de posiciones que hay
@@ -109,7 +163,7 @@ namespace BuscaminasFinal
                     wingame = true;
                     for (uint i = 0; i < this.Width; i++)
                     {
-                        for (uint j = 0; j < this.Height; j++) //POner en leftclick
+                        for (uint j = 0; j < this.Height; j++) //POner en rightclick
                         {
                             celdas[i, j].cell.Endgame();
                         }
@@ -122,6 +176,29 @@ namespace BuscaminasFinal
             {
                 this.celdas[x, y].cell.RightClick();
             }
+        }
+
+        public void MostarLosDeLado()
+        {
+        //    class Enteros
+        //{
+        //    int valor;
+        //    public Enteros(int val)
+        //{
+        
+        //}
+        //}
+            
+        // class Program   
+            
+            int[,] mat = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9, } };
+            Console.Write("x: ");
+            int posX = int.Parse(Console.ReadLine());
+            Console.Write("y: ");
+            int posY = int.Parse(Console.ReadLine());
+
+            List<int> lista = new List<int>();
+
         }
 
 
